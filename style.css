@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Zilla Slab', serif;
+    background-image: url(./plane.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.main-container {
+    display: flex;
+}
+
+h1 {
+    font-size: 6rem;
+    margin-top: 10rem;
+    font-weight: normal;
+}
+
+.text {
+    font-size: 10rem;
+    line-height: 1;
+    margin: 0 4rem;
+    font-weight: bold;
+}
+
+.count-element {
+    text-align: center;
+}
+
+.count-element span {
+    font-size: 1.5rem;
+}
