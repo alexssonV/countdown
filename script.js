@@ -19,14 +19,18 @@ function counter() {
     
 
     daysEl.innerHTML = days;
-    hoursEl.innerHTML = hours;
-    minutesEl.innerHTML = minutes;
-    secondsEl.innerHTML = seconds;
+    hoursEl.innerHTML = zeroesInFront(hours);
+    minutesEl.innerHTML = zeroesInFront(minutes);
+    secondsEl.innerHTML = zeroesInFront(seconds);
 
     if (pumpkinArrival - currentDate < 0) {
         clearInterval(x);
         document.getElementById("heading").innerHTML = "EXPIRED";
       }
+}
+
+function zeroesInFront(time) {
+  return time < 10 ? (`0${time}`) : time;
 }
 
 counter();
